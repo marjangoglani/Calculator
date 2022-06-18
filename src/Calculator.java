@@ -9,14 +9,14 @@ public class Calculator {
     */
 
 
-    public static double calculate(double a, double b, String operation){
+  /*  public static double calculate(double a, double b, String operation){
 
-    }
+    }*/
 
 
     // we keep calling the calculate function for each input whatever
     public static void main(String args[]){
-        double a = 0;
+        /*double a = 0;
         double b = 0;
         String operation = "";
         double returnStatement = 0;
@@ -38,7 +38,15 @@ public class Calculator {
 
         } catch (NumberFormatException e) {
             System.out.println("Input String cannot be parsed to Integer.");
-        }
+        }*/
+
+        // this is how you input objects with different data types (now you don't have to worry about whether it's a string or a double
+        Scanner myScanner = new Scanner (System.in);
+        Object input = myScanner.next();
+        System.out.println(input);
+
+        // so constantly ask for input and check the front of the queue
+        //
 
     }
 }
